@@ -107,14 +107,14 @@ function timermode() {
 function workmode() {
 	document.documentElement.setAttribute('pomodoro-timer-mode', 'work');
 	document.querySelector(':root').style.setProperty('--main-text-color', '#f58f70');
-	timer.duration = 1500000;
+	timer.duration = 3000000;
 	timer.reset();
 }
 
 function breakmode() {
 	document.documentElement.setAttribute('pomodoro-timer-mode', 'break');
 	document.querySelector(':root').style.setProperty('--main-text-color', '#8cc8ff');
-	timer.duration = 300000;
+	timer.duration = 600000;
 	timer.reset();
 }
 
